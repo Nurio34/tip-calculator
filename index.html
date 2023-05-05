@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frontend Mentor | Time Tracking Dashboard</title>
+    <link rel="shortcut icon" href="./image/favicon-32x32.png" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+    
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SPLI <br> TTER</h1>
+
+        <div class="wrapper">
+
+            <div class="calculator">
+                <div class="bill-cont">
+                    <label for="bill">Bill</label>
+                    <input type="text" name="Bill" id="bill" placeholder="0">
+                    <img src="./image/icon-dollar.svg" alt="">
+                </div>
+
+                <div class="tip-cont">
+                    <p>Select Tip %</p>
+                    <label for="5per">5%</label>
+                    <input type="radio" name="Tip" id="5per">
+                    <label for="10per">10%</label>
+                    <input type="radio" name="Tip" id="10per">
+                    <label for="15per">15%</label>
+                    <input type="radio" name="Tip" id="15per">
+                    <label for="25per">25%</label>
+                    <input type="radio" name="Tip" id="25per">
+                    <label for="50per">50%</label>
+                    <input type="radio" name="Tip" id="50per">
+                    <input type="text" name="Tip" id="custom" placeholder="Custom">
+                </div>
+
+                <div class="people-cont">
+                    <label for="people">Number of People</label>
+                    <div class="invalid">Can't be zero</div>
+                    <input type="text" name="People" id="people" placeholder="0"
+                    pattern="(?!0)[0-9]+$">
+                    <img src="./image/icon-person.svg" alt="">
+                </div>
+            </div>
+
+            <div class="result">
+                <div class="amount-cont grid">
+                    <p class="grid-item-1">Tip Amount</p>
+                    <p class="grid-item-2">/ person</p>
+                    <div class="amount-wrapper grid-item-3">
+                        <span class="dolar">$</span>
+                        <span class="amount">0.00</span>
+                    </div>
+                </div>
+
+                <div class="totalAmount-cont grid">
+                    <p class="grid-item-1">Total</p>
+                    <p class="grid-item-2">/ person</p>
+                    <div class="totalAmount-wrapper grid-item-3">
+                        <span class="dolar">$</span>
+                        <span class="totalAmount">0.00</span>
+                    </div>
+                </div>
+
+                <button class="resetBtn" disabled>RESET</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+    <script src="./script/script.js"></script>
+
+</html>
